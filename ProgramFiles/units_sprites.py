@@ -89,7 +89,7 @@ class ProjectileLevelOne(pygame.sprite.Sprite):
 class FirstBg(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__(bg_group)
-        self.image = load_image('background1.png')
+        self.image = load_image('background1.jpg')
         self.rect = self.image.get_rect().move(0, 0)
         self.speed = 3
 
@@ -104,5 +104,5 @@ class FirstBg(pygame.sprite.Sprite):
 class SecondBg(FirstBg):
     def __init__(self):
         super().__init__()
-        self.image = load_image('background2.png')
+        self.image = load_image('background2.jpg')
         self.rect = self.image.get_rect().move(0, -800)
